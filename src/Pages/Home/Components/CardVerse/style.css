@@ -1,0 +1,145 @@
+.container-site {
+  width: 100vw;
+  heigth: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  gap: 30px;
+}
+
+.card-site {
+  width: 100vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: rgb(12, 62, 25);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 62, 25, 1) 45%,
+    rgba(32, 54, 46, 0.9381443298969072) 100%
+  );
+  opacity: 0.9;
+  gap: 10px;
+}
+.card-site img {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card-site span {
+  font-size: 0.9rem;
+  color: #ffff;
+}
+
+.container-card {
+  width: 100%;
+  display: grid;
+  place-content: center;
+  padding: 20px;
+}
+
+.container-card .info {
+  width: 100%;
+  display: flex;
+
+  justify-content: flex-start;
+  padding-top: 1rem;
+}
+.card-site .card-site-content-img img {
+  width: 100vw;
+  max-width: 600px;
+  height: 200px;
+}
+
+.container-site .card-info-container {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+
+  gap: 1rem;
+}
+.container-site .card-info-container:hover {
+}
+.card-info-container .item {
+}
+
+.card-info {
+  display: flex;
+  width: 10rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 12px;
+  max-width: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 0.0325rem solid #416d36;
+  -webkit-box-shadow: 0px -5px 36px -10px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 0px -5px 36px -10px rgba(0, 0, 0, 0.69);
+  box-shadow: 0px -5px 36px -10px rgba(0, 0, 0, 0.69);
+}
+.card-info:hover {
+  padding: 20px;
+}
+.card-info h4 {
+  color: #20362e;
+  font-size: 0.8rem;
+  font-weigth: 800;
+}
+
+.card-info .icon-content {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  gap: 10px;
+}
+.card-info .icon-content span {
+  color: #416d36;
+  font-size: 0.7rem;
+  font-weigth: 400;
+}
+.card-info span {
+  color: #416d36;
+  font-size: 0.6rem;
+}
+
+.card-info::hover {
+  transform: rotate(30g);
+}
+
+@media (max-width: 578px) {
+  .container-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    padding: 13px;
+  }
+  .container-site .card-info-container {
+    width: 400px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+    gap: 4px;
+    padding-right: 10px;
+  }
+  .card-info-container .item {
+    flex: 0 100%;
+    padding: 0px;
+    scroll-snap-align: start;
+  }
+}

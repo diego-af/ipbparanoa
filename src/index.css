@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0px;
+}
+:root {
+  font-size: 62, 5%;
+  font-size: 1.6rem;
+}
+body {
+  width: 100vw;
+  heigth: 100vh;
+  font-family: "Roboto Slab", serif;
+}
