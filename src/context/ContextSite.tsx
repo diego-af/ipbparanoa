@@ -5,9 +5,12 @@ export const SiteContext = createContext({});
 type ChidrenProps = {
   children: React.ReactNode;
 };
+type Menuprops = {
+  openMenu: boolean;
+};
 
 export default function SiteProvider({ children }: ChidrenProps) {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState<Menuprops>();
   const [verseBible, setVerseBible] = useState();
   return (
     <SiteContext.Provider
