@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 nav {
   width: 100vw;
   background: #488b48;
@@ -44,16 +50,23 @@ nav {
   align-items: center;
   padding: 10px;
   gap: 10px;
+  margin-bottom: 0;
 }
 
 .list-menu {
   display: flex;
   align-items: center;
 }
+.list-menu.around {
+  display: none;
+  z-index: 1;
+}
 .list-item {
   list-style: none;
   color: #ffffff;
   text-align: center;
+  font-size: 0.8rem;
+
   margin-left: 0.6125rem;
   font-family: "Roboto Slab", serif;
 }
@@ -61,7 +74,7 @@ nav {
 .icon {
   display: none;
 }
-@media screen and (max-width: 548px) {
+@media screen and (max-width: 578px) {
   .content-logo span {
     display: none;
   }
@@ -97,7 +110,6 @@ nav {
   }
 
   .list-item:hover {
-    padding: 3px;
     color: #ffff;
     font-family: "Roboto Slab", serif;
     background: #488b48;

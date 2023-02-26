@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import Image from "../../../../assets/logo.jpeg";
+
 import {
   FaBookMedical,
   FaBookOpen,
@@ -26,8 +28,7 @@ const CardVerse = () => {
   return (
     <div className="container-site">
       <div className="card-site">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5zYtBdhQv9mGMmMAS0Ymc_1HCbcPAYKGX_uuttRYJYVyatKuWNf3LbCD2KJiaweLvhh4&usqp=CAU" />
-        <span>Igreja Presbiteriana do Paranoá</span>
+        <img src={Image} />
       </div>
 
       <div className="container-card">

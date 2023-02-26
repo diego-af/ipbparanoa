@@ -5,32 +5,32 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  gap: 30px;
 }
 
 .card-site {
   width: 100vw;
-  height: 30vh;
+  height: 235px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+
   background: rgb(12, 62, 25);
-  background: linear-gradient(
+  /* background: linear-gradient(
     90deg,
     rgba(12, 62, 25, 1) 45%,
     rgba(32, 54, 46, 0.9381443298969072) 100%
-  );
+  ); */
   opacity: 0.9;
   gap: 10px;
 }
 .card-site img {
-  width: 30vw;
+  width: 100%;
   display: flex;
   justify-content: center;
-  height: 30vh;
+  height: 235px;
   background-repeat: no-repeat;
   background-size: cover;
+  filter: brightness(134%);
 }
 .card-site span {
   font-size: 0.9rem;
